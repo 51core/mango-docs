@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/src/Mango.AspNetCoreMVCDemo/.vs/Mango.AspNetCoreMVCDemo/v15
+/src/Mango.AspNetCoreMVCDemo/Mango.Web/obj
+/src/Mango.SignalRDemo/.vs/Mango.SignalRDemo/v15
+/src/Mango.SignalRDemo/Mango.SignalRDemo/obj
