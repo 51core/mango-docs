@@ -51,6 +51,12 @@ namespace Mango.Web
 
             app.UseMvc(routes =>
             {
+                //区域路由设置
+                routes.MapRoute(
+                    name: "area",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                //默认路由
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

@@ -9,3 +9,5 @@
 /src/Mango.SignalRDemo/Mango.SignalRDemo/obj
 /src/Mango.AspNetCoreMVCDemo/.vs/Mango.AspNetCoreMVCDemo/v16/Server/sqlite3
 *.suo
+/src/Mango.AspNetCoreMVCDemo/Mango.Web/bin/Debug/netcoreapp2.2
+/src/Mango.AspNetCoreMVCDemo/.vs/Mango.AspNetCoreMVCDemo
