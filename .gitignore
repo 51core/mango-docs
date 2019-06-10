@@ -11,3 +11,7 @@
 *.suo
 /src/Mango.AspNetCoreMVCDemo/Mango.Web/bin/Debug/netcoreapp2.2
 /src/Mango.AspNetCoreMVCDemo/.vs/Mango.AspNetCoreMVCDemo
+/src/Mango.SignalRDemo/.vs/Mango.SignalRDemo/v16/Server/sqlite3
+/src/Mango.SignalRDemo/Mango.SignalR.WeChat/bin/Debug/netcoreapp2.2
+/src/Mango.SignalRDemo/Mango.SignalR.WeChat/obj
+/src/Mango.SignalRDemo/Mango.SignalRDemo/bin/Debug/netcoreapp2.2
