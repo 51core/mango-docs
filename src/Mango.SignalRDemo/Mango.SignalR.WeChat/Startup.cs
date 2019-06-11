@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-
+using Mango.SignalR.WeChat.Chat;
 namespace Mango.SignalR.WeChat
 {
     public class Startup
@@ -15,6 +15,8 @@ namespace Mango.SignalR.WeChat
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //添加SignalR
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -24,10 +26,14 @@ namespace Mango.SignalR.WeChat
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            //启用Signalr
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("/ChatHub");
+            });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("SignalR Success!");
             });
         }
     }
