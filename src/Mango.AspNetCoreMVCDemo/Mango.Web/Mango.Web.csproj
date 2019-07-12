@@ -18,4 +18,9 @@
     <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mango.Common\Mango.Common.csproj" />
+  </ItemGroup>
+
 </Project>
